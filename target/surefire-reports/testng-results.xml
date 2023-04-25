@@ -2,23 +2,27 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-25T14:14:09 UTC" name="Surefire suite" finished-at="2023-04-25T14:15:15 UTC" duration-ms="66244">
+  <suite started-at="2023-04-25T21:19:38 UTC" name="Surefire suite" finished-at="2023-04-25T21:20:36 UTC" duration-ms="57155">
     <groups>
     </groups>
-    <test started-at="2023-04-25T14:14:09 UTC" name="Surefire test" finished-at="2023-04-25T14:15:15 UTC" duration-ms="66244">
+    <test started-at="2023-04-25T21:19:38 UTC" name="Surefire test" finished-at="2023-04-25T21:20:36 UTC" duration-ms="57155">
       <class name="TestAmazon.TestAmazon">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestAmazon.TestAmazon@d706f19]" started-at="2023-04-25T14:14:09 UTC" name="setup" finished-at="2023-04-25T14:14:28 UTC" duration-ms="18983" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestAmazon.TestAmazon@79efed2d]" started-at="2023-04-25T21:19:38 UTC" name="setup" finished-at="2023-04-25T21:19:49 UTC" duration-ms="10795" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="autocompletesuggestion()[pri:0, instance:TestAmazon.TestAmazon@d706f19]" started-at="2023-04-25T14:14:28 UTC" name="autocompletesuggestion" finished-at="2023-04-25T14:14:56 UTC" duration-ms="28260" status="PASS">
+        <test-method signature="autocompletesuggestion()[pri:0, instance:TestAmazon.TestAmazon@79efed2d]" started-at="2023-04-25T21:19:49 UTC" name="autocompletesuggestion" finished-at="2023-04-25T21:20:17 UTC" duration-ms="27151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- autocompletesuggestion -->
-        <test-method signature="readExcel()[pri:0, instance:TestAmazon.TestAmazon@d706f19]" started-at="2023-04-25T14:14:56 UTC" name="readExcel" finished-at="2023-04-25T14:15:15 UTC" duration-ms="18910" status="PASS">
+        <test-method signature="readExcel()[pri:0, instance:TestAmazon.TestAmazon@79efed2d]" started-at="2023-04-25T21:20:17 UTC" name="readExcel" finished-at="2023-04-25T21:20:35 UTC" duration-ms="18821" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readExcel -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestAmazon.TestAmazon@79efed2d]" started-at="2023-04-25T21:20:35 UTC" name="tearDown" finished-at="2023-04-25T21:20:36 UTC" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- TestAmazon.TestAmazon -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
