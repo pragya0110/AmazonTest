@@ -1,11 +1,4 @@
-
-
-import java.util.Arrays;
-import java.util.Date;
-
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
+package Utility;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -13,6 +6,12 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+
+import java.util.Arrays;
+import java.util.Date;
 
 
 public class ExtentListeners implements ITestListener {
@@ -21,7 +20,7 @@ public class ExtentListeners implements ITestListener {
     static String messageBody;
     static String fileName = "Extent_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
 
-    private static ExtentReports extent = ExtentManager.createInstance(System.getProperty("user.dir")+"\\target\\extent-reports\\"+fileName);
+    public  static ExtentReports extent = ExtentManager.createInstance(System.getProperty("user.dir")+"\\target\\extent-reports\\"+fileName);
 
     public static ThreadLocal<ExtentTest> testReport = new ThreadLocal<ExtentTest>();
 
