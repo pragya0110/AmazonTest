@@ -4,7 +4,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.apache.poi.ss.usermodel.Cell;
@@ -70,7 +69,7 @@ import java.util.List;
         @Test
         public void autocompletesuggestion() throws IOException, InterruptedException {
             String sheetName = "SearchTerm";
-            Object[][] data = TestExcelUtil.readData(sheetName);
+            Object[][] data = ExcelUtil.readData(sheetName);
             WebElement searchBar,optionsList;
             String searchData,expectedOutput;
             List<WebElement> options;

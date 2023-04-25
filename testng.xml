@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="TestExtentListeners"/>
+        <listener class-name="ExtentListeners"/>
     </listeners>
     <test name="Test">
         <classes>

@@ -15,13 +15,13 @@ import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 
-public class TestExtentListeners implements ITestListener {
+public class ExtentListeners implements ITestListener {
 
     static Date d = new Date();
     static String messageBody;
     static String fileName = "Extent_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
 
-    private static ExtentReports extent = TestExtentManager.createInstance(System.getProperty("user.dir")+"\\target\\extent-reports\\"+fileName);
+    private static ExtentReports extent = ExtentManager.createInstance(System.getProperty("user.dir")+"\\target\\extent-reports\\"+fileName);
 
     public static ThreadLocal<ExtentTest> testReport = new ThreadLocal<ExtentTest>();
 

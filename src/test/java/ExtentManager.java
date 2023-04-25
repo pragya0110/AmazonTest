@@ -4,7 +4,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 
-public class TestExtentManager {
+public class ExtentManager {
 
     private static ExtentReports extent;
 
