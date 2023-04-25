@@ -20,7 +20,7 @@ public class ExtentListeners implements ITestListener {
     static String messageBody;
     static String fileName = "Extent_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
 
-    public  static ExtentReports extent = ExtentManager.createInstance(System.getProperty("user.dir")+"\\target\\extent-reports\\"+fileName);
+    public  static ExtentReports extent = ExtentManager.createInstance(System.getProperty("user.dir")+"\\target\\surefire-reports\\Surefire suite\\extent.html");
 
     public static ThreadLocal<ExtentTest> testReport = new ThreadLocal<ExtentTest>();
 

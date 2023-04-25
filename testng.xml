@@ -6,7 +6,7 @@
     </listeners>
     <test name="Test">
         <classes>
-            <class name="TestAmazon"/>
+            <class name="TestAmazon.TestAmazon"/>
         </classes>
     </test>
 </suite>
