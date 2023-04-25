@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -94,5 +95,9 @@ public class TestAmazon {
             }
             searchBar.clear();
         }
+    }
+    @AfterTest
+    public void tearDown(){
+        driver.quit();
     }
 }

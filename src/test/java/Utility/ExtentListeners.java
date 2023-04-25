@@ -18,9 +18,9 @@ public class ExtentListeners implements ITestListener {
 
     static Date d = new Date();
     static String messageBody;
-    static String fileName = "Extent_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
-
-    public  static ExtentReports extent = ExtentManager.createInstance(System.getProperty("user.dir")+"\\target\\surefire-reports\\Surefire suite\\extent.html");
+    //static String fileName = "Extent_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
+    static String fileName="extent.html";
+    public  static ExtentReports extent = ExtentManager.createInstance(System.getProperty("user.dir")+"\\target\\surefire-reports\\"+fileName);
 
     public static ThreadLocal<ExtentTest> testReport = new ThreadLocal<ExtentTest>();
 
